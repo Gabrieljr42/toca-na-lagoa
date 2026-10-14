@@ -18,7 +18,7 @@ const lastCheck = computed(() =>
 </script>
 
 <template>
-  <div class="flex flex-wrap items-end justify-between gap-4">
+  <div class="flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap sm:items-end sm:justify-between">
     <div>
       <p class="text-sm font-medium uppercase tracking-wider text-white/60">Apartamentos para alugar</p>
       <h1 class="mt-1 text-3xl font-extrabold tracking-tight sm:text-4xl">{{ count }} opções na Pampulha</h1>
@@ -30,14 +30,14 @@ const lastCheck = computed(() =>
     <button
       type="button"
       :disabled="busy"
-      class="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-semibold text-brand-700 shadow-lg transition hover:bg-brand-50 disabled:opacity-70"
+      class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-white px-4 py-3 sm:w-auto sm:py-2.5 text-sm font-semibold text-brand-700 shadow-lg transition hover:bg-brand-50 disabled:opacity-70"
       @click="monitor.checkNow()"
     >
       <AppIcon name="refresh" class="h-4 w-4" :class="{ 'animate-spin': busy }" stroke-width="2.2" />
       {{ busy ? 'Buscando… (1–3 min)' : 'Verificar agora' }}
     </button>
   </div>
-  <div v-if="status?.sources.length" class="mt-4 flex flex-wrap gap-2">
+  <div v-if="status?.sources.length" class="mt-4 flex flex-wrap justify-center gap-2 sm:justify-start">
     <span
       v-for="source in status.sources"
       :key="source.source"

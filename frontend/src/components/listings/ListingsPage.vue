@@ -43,7 +43,7 @@ async function toggle(card, flag) {
       <ListingsHero :count="cards.length" />
     </template>
 
-    <ListingFilters v-model="filters" :neighborhoods="neighborhoods" />
+    <ListingFilters v-model="filters" :neighborhoods="neighborhoods" :result-count="cards.length" />
 
     <div v-if="!loaded" class="card p-10 text-center text-slate-500">Carregando…</div>
     <div v-else-if="!cards.length" class="card p-10 text-center text-slate-500">Nenhum apartamento com esses filtros.</div>

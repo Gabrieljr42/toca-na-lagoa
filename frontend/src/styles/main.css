@@ -30,3 +30,12 @@
 .toast-leave-active { transition: all 0.2s ease; }
 .toast-enter-from,
 .toast-leave-to { opacity: 0; transform: translateY(8px); }
+
+.sheet-enter-active,
+.sheet-leave-active { transition: transform 0.25s ease; }
+.sheet-enter-from,
+.sheet-leave-to { transform: translateY(100%); }
+.sheet-backdrop-enter-active,
+.sheet-backdrop-leave-active { transition: opacity 0.25s ease; }
+.sheet-backdrop-enter-from,
+.sheet-backdrop-leave-to { opacity: 0; }
