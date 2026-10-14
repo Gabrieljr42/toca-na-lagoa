@@ -23,6 +23,7 @@ num painel só e me avisa no Telegram quando aparece algo novo ou quando um favo
     anunciado ou **muda de preço** — mesmo que saia da faixa de preço.
 - **Painel reativo**: filtros, favoritos e configurações atualizam sem recarregar a página, e a
   lista se atualiza sozinha quando uma verificação agendada termina.
+- **Tela de login** com senha única; a sessão fica salva no navegador por 30 dias.
 - **Verificações agendadas** todos os dias nos horários escolhidos (padrão 08:00, 14:00 e 20:00),
   além do botão "Verificar agora".
 
@@ -40,6 +41,7 @@ num painel só e me avisa no Telegram quando aparece algo novo ou quando um favo
 ```
 app/                    API FastAPI
 ├── api.py              rotas JSON (finas: só orquestram)
+├── auth.py             login por senha e cookie de sessão assinado
 ├── schemas.py          entrada/saída e validação (mensagens em português)
 ├── monitor.py          rotina de verificação: busca, guarda, agrupa e alerta
 ├── sources/            um coletor por portal
@@ -102,8 +104,8 @@ processo, e o banco SQLite fica num volume.
    healthcheck em `/healthz`).
 2. Adicione um **volume** montado em `/app/data`.
 3. Configure as variáveis:
-   - `APP_PASSWORD` — **obrigatória numa URL pública**; protege painel e API com HTTP Basic
-     (qualquer usuário, esta senha);
+   - `APP_PASSWORD` — **obrigatória numa URL pública**; é a senha da tela de login (trocá-la
+     encerra todas as sessões abertas);
    - `RAILWAY_RUN_UID=0` — permite gravar no volume, que o Railway monta como root;
    - `TZ=America/Sao_Paulo` — já vem no `Dockerfile`.
 4. Gere um domínio, abra o painel e configure bairros, faixa de preço, horários e o Telegram em
@@ -120,7 +122,7 @@ API.
 
 | Variável | Padrão | Uso |
 |---|---|---|
-| `APP_PASSWORD` | vazio (sem senha) | Senha do HTTP Basic |
+| `APP_PASSWORD` | vazio (sem login) | Senha da tela de login |
 | `DATA_DIR` | `./data` | Pasta do banco SQLite |
 | `FRONTEND_DIST` | `./frontend/dist` | Pasta do front-end compilado |
 | `TZ` | `America/Sao_Paulo` | Fuso dos horários de verificação |

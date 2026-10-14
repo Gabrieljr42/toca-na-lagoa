@@ -19,7 +19,14 @@ describe('HttpClient', () => {
     await expect(request).rejects.toThrow(new ApiError('O valor mínimo é maior que o máximo', 422));
   });
 
-  it('reports a network failure in Portuguese', async () => {
+  it('notifies the app when the session is no longer valid', async () => {
+    const fetch = vi.fn().mockResolvedValue(jsonResponse(401, { detail: 'Faça login para continuar' }));
+    const onUnauthorized = vi.fn();
+    await expect(new HttpClient(fetch, { onUnauthorized }).get('/api/status')).rejects.toThrow('Faça login');
+    expect(onUnauthorized).toHaveBeenCalledOnce();
+  });
+
+    it('reports a network failure in Portuguese', async () => {
     const fetch = vi.fn().mockRejectedValue(new TypeError('Failed to fetch'));
     await expect(new HttpClient(fetch).get('/api/status')).rejects.toThrow('Sem conexão');
   });

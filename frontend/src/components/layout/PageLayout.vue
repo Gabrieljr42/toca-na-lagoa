@@ -2,10 +2,12 @@
 <script setup>
 import AppIcon from '../ui/AppIcon.vue';
 import RouterLink from '../ui/RouterLink.vue';
-import { useRouter } from '../../core/injection.js';
+import { useAuth, useRouter } from '../../core/injection.js';
 import { useTheme } from '../../stores/useTheme.js';
 
 const { routes } = useRouter();
+const navRoutes = routes.filter((route) => route.nav);
+const { passwordRequired, logout } = useAuth();
 const { isDark, toggle: toggleTheme } = useTheme();
 </script>
 
@@ -26,7 +28,7 @@ const { isDark, toggle: toggleTheme } = useTheme();
         </RouterLink>
         <div class="flex items-center gap-1 rounded-xl bg-white/10 p-1 ring-1 ring-white/15 backdrop-blur">
           <RouterLink
-            v-for="route in routes"
+            v-for="route in navRoutes"
             :key="route.path"
             :to="route.path"
             class="whitespace-nowrap rounded-lg px-2.5 py-1.5 text-sm font-medium transition sm:px-3"
@@ -37,6 +39,9 @@ const { isDark, toggle: toggleTheme } = useTheme();
           </RouterLink>
           <button type="button" title="Alternar tema" class="ml-1 rounded-lg p-1.5 text-white/80 hover:bg-white/10 hover:text-white" @click="toggleTheme">
             <AppIcon :name="isDark ? 'sun' : 'moon'" class="h-5 w-5" />
+          </button>
+          <button v-if="passwordRequired" type="button" title="Sair" class="rounded-lg p-1.5 text-white/80 hover:bg-white/10 hover:text-white" @click="logout">
+            <AppIcon name="logout" class="h-5 w-5" />
           </button>
         </div>
       </nav>

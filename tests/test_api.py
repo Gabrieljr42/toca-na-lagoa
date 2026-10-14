@@ -60,14 +60,6 @@ def test_should_serve_the_vue_shell_for_page_routes(client):
         assert 'id="app"' in response.text
 
 
-def test_should_require_password_except_for_health_check(client, monkeypatch):
-    monkeypatch.setattr("app.main.APP_PASSWORD", "secret")
-    assert client.get("/healthz").status_code == 200
-    assert client.get("/api/status").status_code == 401
-    assert client.get("/settings").status_code == 401
-    assert client.get("/api/status", auth=("eu", "secret")).status_code == 200
-
-
 def test_should_list_cards_with_filters(client, listing):
     assert len(client.get("/api/listings").json()["cards"]) == 1
     assert client.get("/api/listings", params={"favorites": "1"}).json()["cards"] == []

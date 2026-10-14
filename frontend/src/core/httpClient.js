@@ -1,6 +1,8 @@
 /**
  * Thin JSON wrapper around fetch. Services depend on this abstraction rather
  * than on fetch directly, so they can be exercised with a fake client.
+ * `onUnauthorized` lets the app react to an expired session (e.g. show the
+ * login page) without every service knowing about authentication.
  */
 
 export class ApiError extends Error {
@@ -12,8 +14,9 @@ export class ApiError extends Error {
 }
 
 export class HttpClient {
-  constructor(fetchImpl = window.fetch.bind(window)) {
+  constructor(fetchImpl = window.fetch.bind(window), { onUnauthorized = () => {} } = {}) {
     this.fetch = fetchImpl;
+    this.onUnauthorized = onUnauthorized;
   }
 
   get(path, query = {}) {
@@ -44,6 +47,7 @@ export class HttpClient {
       throw new ApiError('Sem conexão com o servidor. Tente de novo.', 0);
     }
     const payload = await response.json().catch(() => null);
+    if (response.status === 401) this.onUnauthorized();
     if (!response.ok) {
       const detail = typeof payload?.detail === 'string' ? payload.detail : `Erro ${response.status}`;
       throw new ApiError(detail, response.status);

@@ -11,6 +11,7 @@ export const ROUTER = Symbol('router');
 export const TOASTS = Symbol('toasts');
 export const MONITOR = Symbol('monitor');
 export const OPTIONS = Symbol('options');
+export const AUTH = Symbol('auth');
 
 function required(key, name) {
   const value = inject(key, null);
@@ -25,3 +26,4 @@ export const useRouter = () => required(ROUTER, 'router');
 export const useToasts = () => required(TOASTS, 'toasts');
 export const useMonitor = () => required(MONITOR, 'monitor');
 export const useOptions = () => required(OPTIONS, 'options');
+export const useAuth = () => required(AUTH, 'auth');

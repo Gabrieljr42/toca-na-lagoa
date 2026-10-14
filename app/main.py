@@ -1,20 +1,19 @@
 """FastAPI application: JSON API plus the Vue single-page front end."""
 
 import logging
-import secrets
 from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
-from typing import Annotated
 
-from fastapi import Depends, FastAPI, HTTPException, Request, status
+from fastapi import Depends, FastAPI, Request, status
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import FileResponse, JSONResponse, PlainTextResponse, Response
-from fastapi.security import HTTPBasic, HTTPBasicCredentials
 from fastapi.staticfiles import StaticFiles
 from sqlmodel import Session
 
 from app.api import router as api_router
-from app.config import APP_PASSWORD, FRONTEND_DIST
+from app.auth import require_session
+from app.auth import router as auth_router
+from app.config import FRONTEND_DIST
 from app.db import engine, init_db, load_settings
 from app.scheduler import apply_schedule, scheduler
 
@@ -22,7 +21,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name
 # httpx logs full request URLs at INFO, which would leak the Telegram bot token.
 logging.getLogger("httpx").setLevel(logging.WARNING)
 
-SPA_ROUTES = ("/", "/settings")
+SPA_ROUTES = ("/", "/settings", "/login")
 
 
 @asynccontextmanager
@@ -36,29 +35,15 @@ async def lifespan(_: FastAPI) -> AsyncIterator[None]:
     scheduler.shutdown(wait=False)
 
 
-security = HTTPBasic(auto_error=False)
-
-
-def require_auth(credentials: Annotated[HTTPBasicCredentials | None, Depends(security)]) -> None:
-    """Enforce HTTP basic auth when APP_PASSWORD is set (any username is accepted)."""
-    if not APP_PASSWORD:
-        return
-    if credentials and secrets.compare_digest(credentials.password.encode(), APP_PASSWORD.encode()):
-        return
-    raise HTTPException(
-        status_code=status.HTTP_401_UNAUTHORIZED,
-        headers={"WWW-Authenticate": "Basic"},
-    )
-
-
-# Auth guards the API and the pages, but not /healthz: the hosting platform's
-# health check has no credentials. The built JS/CSS bundle is public either way.
-PROTECTED = [Depends(require_auth)]
+# The data API needs a session. The page shell, the login endpoints, the
+# built JS/CSS bundle and /healthz (used by the hosting platform) stay public.
+PROTECTED = [Depends(require_session)]
 
 app = FastAPI(title="Toca na Lagoa", lifespan=lifespan)
 # Vite builds the front end with base "/static/"; check_dir is off so the API
 # still starts (and tests run) before the first front-end build.
 app.mount("/static", StaticFiles(directory=FRONTEND_DIST, check_dir=False), name="static")
+app.include_router(auth_router)
 app.include_router(api_router, dependencies=PROTECTED)
 
 
@@ -98,4 +83,4 @@ def serve_frontend() -> Response:
 
 
 for spa_route in SPA_ROUTES:
-    app.add_api_route(spa_route, serve_frontend, methods=["GET"], dependencies=PROTECTED, include_in_schema=False)
+    app.add_api_route(spa_route, serve_frontend, methods=["GET"], include_in_schema=False)

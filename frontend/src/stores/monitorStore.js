@@ -48,14 +48,24 @@ export function createMonitorStore(monitorService, toasts) {
     }
   }
 
+  let timer = null;
+  const poll = () => {
+    if (!document.hidden) refresh().catch(() => {});
+  };
+
   function startPolling() {
-    const poll = () => {
-      if (!document.hidden) refresh().catch(() => {});
-    };
+    if (timer) return;
     poll();
-    setInterval(poll, POLL_INTERVAL_MS);
+    timer = setInterval(poll, POLL_INTERVAL_MS);
     document.addEventListener('visibilitychange', poll);
   }
 
-  return { status, busy, checkNow, refresh, onCheckFinished, startPolling };
+  function stopPolling() {
+    clearInterval(timer);
+    timer = null;
+    document.removeEventListener('visibilitychange', poll);
+    status.value = null;
+  }
+
+  return { status, busy, checkNow, refresh, onCheckFinished, startPolling, stopPolling };
 }
