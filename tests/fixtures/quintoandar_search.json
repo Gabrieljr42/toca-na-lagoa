@@ -1,0 +1,592 @@
+{
+ "engine_timed_out": false,
+ "search_id": "13cc40d7-56d6-451b-b67d-a29e8586adbd",
+ "took": 18,
+ "hits": {
+  "hits": [
+   {
+    "_id": "894801089",
+    "_score": 50.0,
+    "_source": {
+     "id": 894801089,
+     "type": "Apartamento",
+     "area": 24,
+     "bathrooms": 1,
+     "bedrooms": 1,
+     "suites": 1,
+     "parkingSpaces": 1,
+     "amenities": [
+      "QUARTOS_E_CORREDORES_COM_PORTAS_AMPLAS",
+      "FECHADURA_ELETRONICA",
+      "MESAS_E_CADEIRAS_DE_ESCRITORIO",
+      "CORTINAS_BLACK_OUT",
+      "ESPELHO_NO_BANHEIRO",
+      "ARMARIOS_NOS_BANHEIROS",
+      "AR_CONDICIONADO",
+      "BOX",
+      "CAMA_DE_CASAL",
+      "SOL_DA_TARDE",
+      "PODE_TER_ANIMAIS_DE_ESTIMACAO",
+      "ENERGIA",
+      "VARANDA",
+      "RUA_SILENCIOSA",
+      "ARMARIOS_EMBUTIDOS_NO_QUARTO",
+      "ARMARIOS_NA_COZINHA",
+      "LUMINOSIDADE_NATURAL",
+      "ACESSO_SEM_DEGRAUS",
+      "TELEVISAO"
+     ],
+     "installations": [
+      "CORRIMAO",
+      "LAVANDERIA_NO_PREDIO",
+      "RAMPAS_DE_ACESSO"
+     ],
+     "totalCost": 6031,
+     "rent": 4500,
+     "iptuPlusCondominium": 1355,
+     "salePrice": 307000,
+     "address": "Avenida Otacílio Negrão de Lima",
+     "city": "Belo Horizonte",
+     "neighbourhood": "Pampulha",
+     "regionName": "São Luíz",
+     "isSecondaryHouse": false,
+     "coverImage": "894801089-267.5330455695366IMG9132.jpg",
+     "imageList": [
+      "894801089-267.5330455695366IMG9132.jpg",
+      "894801089-960.082151420027IMG9130.jpg",
+      "894801089-841.3069622006713IMG9131.jpg",
+      "894801089-241.97304229485994IMG9133.jpg",
+      "894801089-401.852376843217IMG9134.jpg",
+      "894801089-13.543433872137523IMG9135.jpg",
+      "894801089-837.3112713607853IMG9138.jpg",
+      "894801089-80.8096244180736IMG9140.jpg",
+      "894801089-396.1642305245015IMG9141.jpg",
+      "894801089-106.147014960974IMG9146.jpg",
+      "894801089-548.2923630628337IMG9147.jpg",
+      "894801089-690.1764164030906IMG9148.jpg"
+     ],
+     "imageCaptionList": [
+      "Studio",
+      "Studio",
+      "Studio",
+      "Studio",
+      "Studio",
+      "Studio",
+      "Studio",
+      "Vista Studio",
+      "Sacada",
+      "Banheiro",
+      "Banheiro",
+      "Banheiro"
+     ],
+     "forRent": true,
+     "forSale": true,
+     "isPrimaryMarket": false,
+     "visitStatus": "ACCEPT_NEW",
+     "isFurnished": false,
+     "activeSpecialConditions": [
+      "Exclusivity"
+     ],
+     "yield": 0.0063,
+     "yieldStrategy": "CALCULATOR",
+     "shortRentDescription": "Aluguel de apartamento com 1 suíte em ótimo estado.",
+     "shortSaleDescription": ""
+    },
+    "fields": {
+     "listingTags": []
+    },
+    "orderedImageList": [
+     {
+      "name": "894801089-267.5330455695366IMG9132.jpg"
+     }
+    ],
+    "filtersMatchTag": {
+     "type": "FULL",
+     "label": "Tem tudo que você busca",
+     "title": "O imóvel tem tudo que você busca!",
+     "description": "*Filtros que encontramos:*\n1+ quartos",
+     "meta": {
+      "totalFilters": 2,
+      "matchedFilters": 2,
+      "unmatchedFilters": 0
+     }
+    },
+    "scoreMatchTag": [
+     "SAME_NEIGHBORHOOD_MATCH"
+    ],
+    "matched_queries": [
+     "GEO_LOCATION_EXACT_MATCH_NEIGHBORHOOD_0"
+    ]
+   },
+   {
+    "_id": "893550567",
+    "_score": 0.0,
+    "_source": {
+     "id": 893550567,
+     "type": "Apartamento",
+     "area": 69,
+     "bathrooms": 1,
+     "bedrooms": 1,
+     "suites": 0,
+     "parkingSpaces": 1,
+     "amenities": [
+      "FECHADURA_ELETRONICA",
+      "CHURRASQUEIRA",
+      "MESAS_E_CADEIRAS_DE_ESCRITORIO",
+      "JANELA_ANTI_RUIDO",
+      "CORTINAS_BLACK_OUT",
+      "ESPELHO_NO_BANHEIRO",
+      "VARAL_DE_ROUPAS",
+      "QUARTO_EXTRA_REVERSIVEL",
+      "CAMA_DE_CASAL",
+      "SOL_DA_TARDE",
+      "AREA_DE_SERVICO",
+      "TANQUE",
+      "ENERGIA",
+      "CLOSET",
+      "RUA_SILENCIOSA",
+      "GELADEIRA_INCLUSO",
+      "ACESSO_SEM_DEGRAUS",
+      "MESAS_E_CADEIRAS_DE_JANTAR",
+      "TELEVISAO",
+      "VISTA_LIVRE",
+      "COOKTOP",
+      "QUARTOS_E_CORREDORES_COM_PORTAS_AMPLAS",
+      "MAQUINA_DE_LAVAR",
+      "TOMADAS_NOVAS",
+      "ARMARIOS_NOS_BANHEIROS",
+      "COZINHA_AMERICANA",
+      "BOX",
+      "CORTINAS_DECORATIVAS",
+      "SOFA",
+      "PISCINA_PRIVATIVA",
+      "REDE_DE_PROTECAO",
+      "ARMARIOS_EMBUTIDOS_NO_QUARTO",
+      "SOL_DA_MANHA",
+      "ARMARIOS_NA_COZINHA",
+      "LUMINOSIDADE_NATURAL",
+      "CHUVEIRO_ELETRICO",
+      "VARANDA_GOURMET"
+     ],
+     "installations": [
+      "SALAO_DE_FESTAS",
+      "VAGA_DE_GARAGEM_ACESSIVEL",
+      "CHURRASQUEIRA",
+      "GAS_ENCANADO",
+      "ESPACO_GOURMET_NA_AREA_COMUM",
+      "RAMPAS_DE_ACESSO",
+      "PISO_TATIL"
+     ],
+     "totalCost": 3803,
+     "rent": 3329,
+     "iptuPlusCondominium": 343,
+     "salePrice": 0,
+     "address": "Rua Professor Domício Murta",
+     "city": "Belo Horizonte",
+     "neighbourhood": "Ouro Preto",
+     "regionName": "Ouro Preto",
+     "isSecondaryHouse": false,
+     "coverImage": "893550567-752.8313096519823WhatsAppImage20220212at12.55.04.jpeg",
+     "imageList": [
+      "893550567-752.8313096519823WhatsAppImage20220212at12.55.04.jpeg",
+      "893550567-558.3372529393343WhatsAppImage20220212at12.55.061.jpeg",
+      "893550567-884.0798434966615WhatsAppImage20220212at12.55.05.jpeg",
+      "893550567-431.4869138240083WhatsAppImage20220212at12.54.561.jpeg",
+      "893550567-86.65397917137729WhatsAppImage20220212at12.54.59.jpeg",
+      "893550567-15.483398565428242WhatsAppImage20220212at12.55.00.jpeg",
+      "893550567-446.16306591420863WhatsAppImage20220212at12.55.011.jpeg",
+      "893550567-882.8050958934884WhatsAppImage20220212at12.55.031.jpeg",
+      "893550567-710.2863869151107WhatsAppImage20220212at12.54.581.jpeg",
+      "893550567-827.6530055325808WhatsAppImage20220212at12.54.58.jpeg",
+      "893550567-705.2850875874437WhatsAppImage20220212at12.54.541.jpeg",
+      "893550567-371.9460327945765WhatsAppImage20220212at12.54.56.jpeg"
+     ],
+     "imageCaptionList": [
+      "Sala",
+      "Sala",
+      "Sala",
+      "Sala",
+      "Vista da Sala",
+      "Quarto 1",
+      "Quarto 1",
+      "Quarto 1",
+      "Banheiro",
+      "Banheiro",
+      "Cozinha",
+      "Cozinha"
+     ],
+     "forRent": true,
+     "forSale": false,
+     "isPrimaryMarket": false,
+     "visitStatus": "ACCEPT_NEW",
+     "isFurnished": true,
+     "activeSpecialConditions": [],
+     "shortRentDescription": "Aluguel de apartamento mobiliado com 1 quarto e closet.",
+     "shortSaleDescription": ""
+    },
+    "fields": {
+     "listingTags": []
+    },
+    "orderedImageList": [
+     {
+      "name": "893550567-752.8313096519823WhatsAppImage20220212at12.55.04.jpeg"
+     }
+    ],
+    "filtersMatchTag": {
+     "type": "PARTIAL",
+     "label": "Outra localização",
+     "title": "O imóvel tem tudo que você busca, em outra localização!",
+     "description": "*Filtros que encontramos:*\n1+ quartos\n\n*Localização que é diferente:*\nOuro Preto",
+     "meta": {
+      "totalFilters": 2,
+      "matchedFilters": 1,
+      "unmatchedFilters": 1
+     }
+    },
+    "scoreMatchTag": [],
+    "matched_queries": []
+   },
+   {
+    "_id": "895586080",
+    "_score": 0.0,
+    "_source": {
+     "id": 895586080,
+     "type": "StudioOuKitchenette",
+     "area": 26,
+     "bathrooms": 1,
+     "bedrooms": 1,
+     "suites": 0,
+     "parkingSpaces": 0,
+     "amenities": [
+      "RUA_SILENCIOSA",
+      "COZINHA_AMERICANA",
+      "GELADEIRA_INCLUSO",
+      "FOGAO_INCLUSO",
+      "CAMA_DE_CASAL",
+      "ARMARIOS_NA_COZINHA",
+      "UTENSILIOS_DE_COZINHA",
+      "PODE_TER_ANIMAIS_DE_ESTIMACAO"
+     ],
+     "installations": [
+      "LAVANDERIA_NO_PREDIO"
+     ],
+     "totalCost": 1953,
+     "rent": 1750,
+     "iptuPlusCondominium": 134,
+     "salePrice": 0,
+     "address": "Rua Salitre",
+     "city": "Belo Horizonte",
+     "neighbourhood": "Santa Cruz",
+     "regionName": "Santa Cruz",
+     "isSecondaryHouse": false,
+     "coverImage": "original895586080-614.2759378762618IMG3125.jpg",
+     "imageList": [
+      "original895586080-614.2759378762618IMG3125.jpg",
+      "895586080-302.09068623723846IMG3126.jpg",
+      "original895586080-221.71038374438012IMG3127.jpg",
+      "original895586080-564.4404359734526IMG3128.jpg",
+      "original895586080-362.5670119955161IMG3133.jpg",
+      "original895586080-497.40333410670934IMG3134.jpg",
+      "895586080-783.6272479191254IMG3135.jpg",
+      "original895586080-211.34985375863602IMG3136.jpg",
+      "original895586080-612.1544087373444IMG3129.jpg",
+      "original895586080-222.11040252103697IMG3130.jpg",
+      "895586080-752.134211081599IMG3131.jpg",
+      "original895586080-313.36722180052953IMG3132.jpg"
+     ],
+     "imageCaptionList": [
+      "Sala/Quarto",
+      "Sala/Quarto",
+      "Sala/Quarto",
+      "Sala/Quarto",
+      "Cozinha",
+      "Cozinha",
+      "Cozinha",
+      "Cozinha",
+      "Banheiro ",
+      "Banheiro ",
+      "Banheiro ",
+      "Banheiro "
+     ],
+     "forRent": true,
+     "forSale": false,
+     "isPrimaryMarket": false,
+     "visitStatus": "ACCEPT_ALWAYS",
+     "isFurnished": false,
+     "activeSpecialConditions": [
+      "Exclusivity"
+     ],
+     "shortRentDescription": "Kitnet para alugar em Santa Cruz, 1 quarto, animais permitidos.",
+     "shortSaleDescription": ""
+    },
+    "fields": {
+     "listingTags": [
+      "NEW_AD"
+     ]
+    },
+    "orderedImageList": [
+     {
+      "name": "original895586080-614.2759378762618IMG3125.jpg"
+     }
+    ],
+    "filtersMatchTag": {
+     "type": "PARTIAL",
+     "label": "Outra localização",
+     "title": "O imóvel tem tudo que você busca, em outra localização!",
+     "description": "*Filtros que encontramos:*\n1+ quartos\n\n*Localização que é diferente:*\nSanta Cruz",
+     "meta": {
+      "totalFilters": 2,
+      "matchedFilters": 1,
+      "unmatchedFilters": 1
+     }
+    },
+    "scoreMatchTag": [],
+    "matched_queries": []
+   },
+   {
+    "_id": "895758001",
+    "_score": 0.0,
+    "_source": {
+     "id": 895758001,
+     "type": "Casa",
+     "area": 55,
+     "bathrooms": 1,
+     "bedrooms": 1,
+     "suites": 1,
+     "parkingSpaces": 2,
+     "amenities": [
+      "VISTA_LIVRE",
+      "QUARTOS_E_CORREDORES_COM_PORTAS_AMPLAS",
+      "RUA_SILENCIOSA",
+      "BOX",
+      "SOL_DA_MANHA",
+      "LUMINOSIDADE_NATURAL",
+      "SOL_DA_TARDE",
+      "AREA_DE_SERVICO",
+      "PODE_TER_ANIMAIS_DE_ESTIMACAO",
+      "TANQUE"
+     ],
+     "installations": [
+      "VAGA_DE_GARAGEM_ACESSIVEL",
+      "RAMPAS_DE_ACESSO"
+     ],
+     "totalCost": 1316,
+     "rent": 1160,
+     "iptuPlusCondominium": 105,
+     "salePrice": 0,
+     "address": "Rua Ipê do Campo",
+     "city": "Belo Horizonte",
+     "neighbourhood": "Etelvina Carneiro",
+     "regionName": "Etelvina Carneiro",
+     "isSecondaryHouse": false,
+     "coverImage": "original895758001-581.0295365893215IMG7886.jpg",
+     "imageList": [
+      "original895758001-581.0295365893215IMG7886.jpg",
+      "original895758001-397.30193010611237IMG7887.jpg",
+      "895758001-913.150749970834IMG7888.jpg",
+      "original895758001-681.7074011010485IMG7889.jpg",
+      "895758001-945.34602038746IMG7890.jpg",
+      "original895758001-539.2611086127082IMG7891.jpg",
+      "original895758001-138.27726175178344IMG7892.jpg",
+      "original895758001-225.00751302222133IMG7893.jpg",
+      "original895758001-379.5463539160955IMG7894.jpg",
+      "895758001-2.7323145337072585IMG7895.jpg",
+      "original895758001-866.4090759330122IMG7896.jpg",
+      "original895758001-333.7178149063573IMG7897.jpg"
+     ],
+     "imageCaptionList": [
+      "Foto sem legenda",
+      "Foto sem legenda",
+      "Foto sem legenda",
+      "Foto sem legenda",
+      "Foto sem legenda",
+      "Foto sem legenda",
+      "Foto sem legenda",
+      "Foto sem legenda",
+      "Foto sem legenda",
+      "Foto sem legenda",
+      "Foto sem legenda",
+      "Foto sem legenda"
+     ],
+     "forRent": true,
+     "forSale": false,
+     "isPrimaryMarket": false,
+     "visitStatus": "ACCEPT_NEW",
+     "isFurnished": false,
+     "shortRentDescription": "Casa para aluguel com 1 quarto, aceita animais de estimação.",
+     "shortSaleDescription": ""
+    },
+    "fields": {
+     "listingTags": [
+      "NEW_AD"
+     ]
+    },
+    "orderedImageList": [
+     {
+      "name": "original895758001-581.0295365893215IMG7886.jpg"
+     }
+    ],
+    "filtersMatchTag": {
+     "type": "PARTIAL",
+     "label": "Outra localização",
+     "title": "O imóvel tem tudo que você busca, em outra localização!",
+     "description": "*Filtros que encontramos:*\n1+ quartos\n\n*Localização que é diferente:*\nEtelvina Carneiro",
+     "meta": {
+      "totalFilters": 2,
+      "matchedFilters": 1,
+      "unmatchedFilters": 1
+     }
+    },
+    "scoreMatchTag": [],
+    "matched_queries": []
+   },
+   {
+    "_id": "895746694",
+    "_score": 0.0,
+    "_source": {
+     "id": 895746694,
+     "type": "StudioOuKitchenette",
+     "area": 22,
+     "bathrooms": 1,
+     "bedrooms": 1,
+     "suites": 0,
+     "parkingSpaces": 0,
+     "amenities": [
+      "RUA_SILENCIOSA",
+      "COZINHA_AMERICANA",
+      "CAMA_DE_CASAL",
+      "SOMENTE_UMA_CASA_NO_TERRENO",
+      "LUMINOSIDADE_NATURAL",
+      "PODE_TER_ANIMAIS_DE_ESTIMACAO"
+     ],
+     "installations": [],
+     "totalCost": 2177,
+     "rent": 2095,
+     "iptuPlusCondominium": 0,
+     "salePrice": 0,
+     "address": "Rua Salomão Rodrigues da Silva",
+     "city": "Belo Horizonte",
+     "neighbourhood": "Paquetá",
+     "regionName": "Paquetá",
+     "isSecondaryHouse": false,
+     "coverImage": "original895746694-720.8176114758611MG67771.jpg",
+     "imageList": [
+      "original895746694-720.8176114758611MG67771.jpg",
+      "original895746694-866.571546249741MG67782.jpg",
+      "original895746694-742.5540790243658MG67793.jpg",
+      "original895746694-948.9950569158182MG67804.jpg",
+      "original895746694-436.90625244421346MG67815.jpg",
+      "895746694-712.4644192201813MG67826.jpg",
+      "original895746694-20.51283255642611MG67837.jpg",
+      "original895746694-720.998838807983MG67848.jpg",
+      "original895746694-299.78040098992096MG67859.jpg",
+      "original895746694-823.5371092051975MG678610.jpg",
+      "original895746694-588.2461317097001MG561911.jpg",
+      "original895746694-556.0199996855721MG562012.jpg"
+     ],
+     "imageCaptionList": [
+      "Sala/Cozinha",
+      "Sala/Cozinha",
+      "Sala/Cozinha",
+      "Sala/Cozinha",
+      "Sala/Cozinha",
+      "Sala/Cozinha",
+      "Quarto",
+      "Quarto",
+      "Quarto",
+      "Quarto",
+      "Banheiro social ",
+      "Banheiro social "
+     ],
+     "forRent": true,
+     "forSale": false,
+     "isPrimaryMarket": false,
+     "visitStatus": "ACCEPT_NEW",
+     "isFurnished": false,
+     "shortRentDescription": "Alugar studio com 1 quarto, aceita pets.",
+     "shortSaleDescription": ""
+    },
+    "fields": {
+     "listingTags": [
+      "NEW_AD"
+     ]
+    },
+    "orderedImageList": [
+     {
+      "name": "original895746694-720.8176114758611MG67771.jpg"
+     }
+    ],
+    "filtersMatchTag": {
+     "type": "PARTIAL",
+     "label": "Outra localização",
+     "title": "O imóvel tem tudo que você busca, em outra localização!",
+     "description": "*Filtros que encontramos:*\n1+ quartos\n\n*Localização que é diferente:*\nPaquetá",
+     "meta": {
+      "totalFilters": 2,
+      "matchedFilters": 1,
+      "unmatchedFilters": 1
+     }
+    },
+    "scoreMatchTag": [],
+    "matched_queries": []
+   }
+  ],
+  "max_score": 50.0,
+  "total": {
+   "relation": "Eq",
+   "value": 5
+  }
+ },
+ "location": {
+  "id": "ChIJ_T60aFiQpgARuouwwigV5mM",
+  "source": "GEOCODE_GOOGLE",
+  "locationContext": "NEIGHBORHOOD",
+  "viewport": {
+   "north": -19.8433398,
+   "south": -19.8623443,
+   "east": -43.93488319999999,
+   "west": -43.967381
+  },
+  "neighborhood": "Pampulha",
+  "city": "Belo Horizonte",
+  "state": "MG",
+  "country": "Brasil",
+  "center": {
+   "lat": -19.8527226,
+   "lng": -43.9559969
+  },
+  "address": "Pampulha, Belo Horizonte - MG, Brasil",
+  "regionAvailable": true
+ },
+ "locationInfo": {
+  "locations": [
+   {
+    "id": "ChIJ_T60aFiQpgARuouwwigV5mM",
+    "source": "GEOCODE_GOOGLE",
+    "locationContext": "NEIGHBORHOOD",
+    "viewport": {
+     "north": -19.8433398,
+     "south": -19.8623443,
+     "east": -43.93488319999999,
+     "west": -43.967381
+    },
+    "neighborhood": "Pampulha",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "country": "Brasil",
+    "center": {
+     "lat": -19.8527226,
+     "lng": -43.9559969
+    },
+    "address": "Pampulha, Belo Horizonte - MG, Brasil",
+    "regionAvailable": true
+   }
+  ],
+  "joinedViewport": {
+   "north": -19.8433398,
+   "south": -19.8623443,
+   "east": -43.93488319999999,
+   "west": -43.967381
+  }
+ }
+}

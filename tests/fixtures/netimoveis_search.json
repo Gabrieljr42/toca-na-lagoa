@@ -1,0 +1,135 @@
+{
+ "erro": false,
+ "mensagem": "",
+ "quantidadeTotalImoveis": 3,
+ "paginaAtual": 1,
+ "localizacao": [
+  {
+   "pais": "BR",
+   "estado": "minas-gerais",
+   "cidade": "belo-horizonte",
+   "bairro": "",
+   "logradouro": "",
+   "nomeCompleto": "Pampulha (Belo Horizonte - MG)",
+   "urlLocalidade": "BR-MG-belo-horizonte--pampulha-",
+   "regiao": "pampulha",
+   "tipo": "Regiao",
+   "estadoMigalha": "Minas Gerais",
+   "cidadeMigalha": "Belo Horizonte",
+   "bairroMigalha": "",
+   "logradouroMigalha": "",
+   "regiaoMigalha": "Pampulha",
+   "latitude": -19.83789,
+   "longitude": -43.96732
+  }
+ ],
+ "imovelCampos": [
+  {
+   "imovel_id": "1080699",
+   "imovelId": "",
+   "quartos": 0,
+   "banhos": 2,
+   "vagasGaragem": 1,
+   "areaRealPrivativa": "121m²",
+   "valorImovel": "R$ 3.500",
+   "valorCondominio": "R$ 250",
+   "valorIptu": "R$ 109",
+   "parcelaIptu": 11,
+   "cidade": "Belo Horizonte",
+   "bairro": "Castelo",
+   "logradouro": "Rua Castelo de Beja",
+   "link": "/imovel/locacao-cobertura-minas-gerais-belo-horizonte-castelo/1080699?tipoUrl=cobertura&transacao=locacao&localizacao=minas-gerais-belo-horizonte-castelo",
+   "titulo": "Apartamento para alugar com 121 m², 2 banheiros, 1 vaga",
+   "tituloLink": "Apartamento para alugar com 121 m², 2 banheiros, 1 vaga em Rua Castelo de Beja, Castelo, Belo Horizonte",
+   "fotos": [
+    {
+     "foto": "2/6/1080699/5efe189b-3b65-4646-9f82-096600be8d50.webp"
+    },
+    {
+     "foto": "2/6/1080699/36f83477-37e7-4ef4-97fe-1ac4adc87f00.webp"
+    },
+    {
+     "foto": "2/6/1080699/b8f25c4a-0c93-4ffb-ad8c-2fe8a3062637.webp"
+    }
+   ],
+   "lancamento": false,
+   "video": true,
+   "videoUrl": "",
+   "tour": true,
+   "listaDeImoveisAgrupados": [],
+   "quantidadeDeImoveisAgrupados": 0
+  },
+  {
+   "imovel_id": "509696",
+   "imovelId": "",
+   "quartos": 2,
+   "banhos": 1,
+   "vagasGaragem": 1,
+   "areaRealPrivativa": "106m²",
+   "valorImovel": "R$ 3.200",
+   "valorCondominio": "R$ 390",
+   "valorIptu": "R$ 102",
+   "parcelaIptu": 12,
+   "cidade": "Belo Horizonte",
+   "bairro": "Castelo",
+   "logradouro": "",
+   "link": "/imovel/locacao-apartamento-minas-gerais-belo-horizonte-castelo/509696?tipoUrl=apartamento&transacao=locacao&localizacao=minas-gerais-belo-horizonte-castelo",
+   "titulo": "Área Privativa para alugar com 106 m², 2 quartos, 1 banheiro, 1 vaga",
+   "tituloLink": "Área Privativa para alugar com 106 m², 2 quartos, 1 banheiro, 1 vaga em Castelo, Belo Horizonte",
+   "fotos": [
+    {
+     "foto": "2/6/509696/e1cb2ba2-a9d2-4fa0-8b8c-30f018302dfe.webp"
+    },
+    {
+     "foto": "2/6/509696/f5fea114-33da-450a-8590-6e5db26c9cea.webp"
+    },
+    {
+     "foto": "2/6/509696/4499decb-d26d-4b2c-9be2-b2b8ede76958.webp"
+    }
+   ],
+   "lancamento": false,
+   "video": false,
+   "videoUrl": "",
+   "tour": false,
+   "listaDeImoveisAgrupados": [],
+   "quantidadeDeImoveisAgrupados": 0
+  },
+  {
+   "imovel_id": "948886",
+   "imovelId": "",
+   "quartos": 2,
+   "banhos": 1,
+   "vagasGaragem": 1,
+   "areaRealPrivativa": "51m²",
+   "valorImovel": "R$ 1.300",
+   "valorCondominio": "R$ 370",
+   "valorIptu": "R$ 96",
+   "parcelaIptu": 11,
+   "cidade": "Belo Horizonte",
+   "bairro": "Trevo",
+   "logradouro": "Rua Aloísio Aragão Villar",
+   "link": "/imovel/locacao-apartamento-minas-gerais-belo-horizonte-trevo/948886?tipoUrl=apartamento&transacao=locacao&localizacao=minas-gerais-belo-horizonte-trevo",
+   "titulo": "Apartamento para alugar com 51 m², 2 quartos, 1 banheiro, 1 vaga",
+   "tituloLink": "Apartamento para alugar com 51 m², 2 quartos, 1 banheiro, 1 vaga em Rua Aloísio Aragão Villar, Trevo, Belo Horizonte",
+   "fotos": [
+    {
+     "foto": "2/6/948886/b8c0a5f3-9-0-rua-aloisio-aragao-villar-641-ap-303-bl-12-trevo-1.jpg"
+    },
+    {
+     "foto": "2/6/948886/c816e6cb-6-0-rua-aloisio-aragao-villar-641-ap-303-bl-12-trevo-2.jpg"
+    },
+    {
+     "foto": "2/6/948886/73eddb0e-1-0-rua-aloisio-aragao-villar-641-ap-303-bl-12-trevo-3.jpg"
+    }
+   ],
+   "lancamento": false,
+   "video": true,
+   "videoUrl": "",
+   "tour": true,
+   "listaDeImoveisAgrupados": [],
+   "quantidadeDeImoveisAgrupados": 0
+  }
+ ],
+ "tituloDinamico": "91 Apartamentos para alugar na região Pampulha (Belo Horizonte - MG)",
+ "tituloSEO": "Apartamentos para alugar na região Pampulha (Belo Horizonte - MG) | Netimóveis"
+}

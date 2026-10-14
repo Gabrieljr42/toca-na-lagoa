@@ -1,0 +1,18 @@
+[Unit]
+Description=Toca na Lagoa — monitor de aluguel na Pampulha (BH)
+After=network-online.target podman.socket
+Wants=network-online.target
+Requires=podman.socket
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/home/guilherme-victor/personal/apto-pampulha
+Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ExecStart=/usr/bin/podman compose up -d
+ExecStop=/usr/bin/podman compose down
+TimeoutStartSec=600
+TimeoutStopSec=60
+
+[Install]
+WantedBy=default.target

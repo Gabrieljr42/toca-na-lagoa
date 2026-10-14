@@ -1,0 +1,17 @@
+services:
+  apto-pampulha:
+    build: .
+    container_name: apto-pampulha
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:47835:8080"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      TZ: America/Sao_Paulo
+    volumes:
+      - apto-data:/app/data
+
+volumes:
+  apto-data:

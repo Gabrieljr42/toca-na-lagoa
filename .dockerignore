@@ -1,0 +1,12 @@
+.git
+.claude
+.venv
+.pytest_cache
+.ruff_cache
+**/__pycache__
+data
+tests
+deploy
+.env
+frontend/node_modules
+frontend/dist

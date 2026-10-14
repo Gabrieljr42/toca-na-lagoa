@@ -1,0 +1,1235 @@
+{
+ "search": {
+  "time": 8,
+  "maxScore": 1.7996068,
+  "totalCount": 5,
+  "result": {
+   "listings": [
+    {
+     "listing": {
+      "id": "2911269940",
+      "externalId": "FA8337",
+      "advertiserId": "45b27a99-f1f5-fdff-a6da-ed4b53093712",
+      "contractType": "REAL_ESTATE",
+      "status": "ACTIVE",
+      "publicationType": "PREMIUM",
+      "displayAddressType": "ALL",
+      "listingType": "USED",
+      "pricingInfos": [
+       {
+        "businessType": "RENTAL",
+        "yearlyIptu": 0,
+        "price": 6500,
+        "monthlyCondoFee": 600,
+        "rentalInfo": {
+         "period": "MONTHLY",
+         "warranties": [],
+         "monthlyRentalTotalPrice": 7100
+        }
+       }
+      ],
+      "showPrice": true,
+      "sourceId": "8289ceaa-334b-3fcc-a7f7-3c90d54989d8",
+      "address": {
+       "country": "BR",
+       "state": "Minas Gerais",
+       "city": "Belo Horizonte",
+       "district": "",
+       "zone": "",
+       "neighborhood": "São Luiz",
+       "street": "Alameda das Lathânias",
+       "streetNumber": "1121",
+       "zipCode": "31275100",
+       "level": "Level_NONE",
+       "point": {
+        "lat": -19.857728,
+        "lon": -43.961116,
+        "source": "GOOGLE"
+       },
+       "geoJson": "",
+       "precision": "ROOFTOP",
+       "name": "",
+       "locationId": "BR>Minas Gerais>NULL>Belo Horizonte>Barrios>Sao Jose",
+       "source": "CORREIOS",
+       "confidence": "VALID_STREET",
+       "pois": [],
+       "valuableZones": [],
+       "poisList": [],
+       "ibgeCityId": "",
+       "stateAcronym": "MG",
+       "geopoint": "-19.857728,-43.961116"
+      },
+      "propertyType": "UNIT",
+      "usableAreas": [
+       74
+      ],
+      "totalAreas": [
+       74
+      ],
+      "bedrooms": [
+       1
+      ],
+      "bathrooms": [
+       1
+      ],
+      "suites": [],
+      "parkingSpaces": [],
+      "floors": [],
+      "unitTypes": [
+       "PENTHOUSE"
+      ],
+      "unitSubTypes": [],
+      "amenities": [
+       "GARDEN",
+       "GOURMET_SPACE",
+       "INTERCOM",
+       "SAFETY_CIRCUIT",
+       "GATED_COMMUNITY",
+       "KITCHEN",
+       "AIR_CONDITIONING",
+       "BARBECUE_GRILL"
+      ],
+      "usageTypes": [
+       "RESIDENTIAL"
+      ],
+      "unitFloor": 0,
+      "unitsOnTheFloor": 0,
+      "constructionStatus": "ConstructionStatus_NONE",
+      "createdAt": "2026-09-11T08:59:35.997+00:00",
+      "stamps": [],
+      "condominiumName": "",
+      "modality": [],
+      "flags": [
+       {
+        "value": "BR>Minas Gerais>NULL>Belo Horizonte>Barrios>Sao Jose",
+        "key": "OLD_LOCATION_ID"
+       },
+       {
+        "value": "true",
+        "key": "NEW_LISTING_FLOW"
+       }
+      ],
+      "visitToTheDecoratedCalendar": [],
+      "constructionStatusCalendar": [],
+      "propertyDevelopers": [],
+      "advertiserContact": {
+       "phones": [
+        "03134921000",
+        "031993980398"
+       ]
+      },
+      "whatsappNumber": "031993980398"
+     },
+     "account": {
+      "id": "45b27a99-f1f5-fdff-a6da-ed4b53093712",
+      "name": "Fabiano Imóveis",
+      "phones": {
+       "primary": "03134921000",
+       "mobile": "031993980398"
+      },
+      "addresses": {
+       "shipping": {},
+       "billing": {
+        "street": "Avenida Antônio Abrahaão Caram",
+        "streetNumber": "762",
+        "complement": "",
+        "neighborhood": "São José",
+        "city": "Belo Horizonte",
+        "state": "MG",
+        "locationId": ""
+       }
+      },
+      "logoUrl": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/3ef29177412da2d04d3ce1428d4756cb/{description}.jpg?action={action}&dimension={width}x{height}",
+      "licenseNumber": "25990-F-MG",
+      "websiteUrl": "https://www.fabianoimoveis.com.br  https://www.instagram.com/fabianoimoveispampulha  https://m.facebook.com/story.php  https://br.linkedin.com/in/fabiano-im%C3%B3veis-73a420204",
+      "createdDate": "2018-03-27T17:34:20Z",
+      "showAddress": true,
+      "legacyVivarealId": 39949,
+      "legacyZapId": 2214471,
+      "config": {
+       "verified": true
+      },
+      "tier": "diamond"
+     },
+     "medias": [
+      {
+       "id": "a102ce3eff905d1ed43664ecb3dbac8f",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/a102ce3eff905d1ed43664ecb3dbac8f/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "f8eb4f42572dc30260b7c5a6c43f272a",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/f8eb4f42572dc30260b7c5a6c43f272a/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "45735d8b9e29b33a096264364b362649",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/45735d8b9e29b33a096264364b362649/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "c842782d02b6628c64544d1ed1bc3053",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/c842782d02b6628c64544d1ed1bc3053/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "9695d64081b7f8326534ccd80de377fd",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/9695d64081b7f8326534ccd80de377fd/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "d451d46d9967b18012b527715db74908",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/d451d46d9967b18012b527715db74908/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "d610bb70cd4917b766cc831ec827e6c2",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/d610bb70cd4917b766cc831ec827e6c2/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "b8dc3601d921999ec1517679e8beed41",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/b8dc3601d921999ec1517679e8beed41/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "a28aa0998833d5ca5df56dc53f6137df",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/a28aa0998833d5ca5df56dc53f6137df/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "d487d3a5f4a81135a3f2e3a2e7ef261b",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/d487d3a5f4a81135a3f2e3a2e7ef261b/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      }
+     ],
+     "accountLink": {
+      "name": "Fabiano Imóveis",
+      "href": "/imobiliaria/39949/",
+      "rel": "",
+      "data": {},
+      "title": "",
+      "url": ""
+     },
+     "link": {
+      "name": "Cobertura com 1 Quarto para alugar, 74m²",
+      "href": "/imovel/aluguel-cobertura-1-quarto-com-churrasqueira-sao-jose-belo-horizonte-mg-74m2-id-2911269940/",
+      "rel": "",
+      "data": {
+       "city": "Belo Horizonte",
+       "neighborhood": "São José",
+       "state": "Minas Gerais",
+       "street": "Alameda das Lathânias",
+       "streetNumber": "1121",
+       "zone": "Bairros"
+      },
+      "title": "",
+      "url": ""
+     }
+    },
+    {
+     "listing": {
+      "id": "2909162865",
+      "externalId": "FA7431",
+      "advertiserId": "45b27a99-f1f5-fdff-a6da-ed4b53093712",
+      "contractType": "REAL_ESTATE",
+      "status": "ACTIVE",
+      "publicationType": "STANDARD",
+      "displayAddressType": "ALL",
+      "listingType": "USED",
+      "pricingInfos": [
+       {
+        "businessType": "RENTAL",
+        "yearlyIptu": 50,
+        "price": 3300,
+        "monthlyCondoFee": 550,
+        "rentalInfo": {
+         "period": "MONTHLY",
+         "warranties": [],
+         "monthlyRentalTotalPrice": 3850
+        }
+       }
+      ],
+      "showPrice": true,
+      "sourceId": "3d4eacfd-c412-3dda-9dec-9ab67c8516d2",
+      "address": {
+       "country": "BR",
+       "state": "Minas Gerais",
+       "city": "Belo Horizonte",
+       "district": "",
+       "zone": "",
+       "neighborhood": "São Luiz",
+       "street": "Alameda das Lathânias",
+       "streetNumber": "1140",
+       "zipCode": "31270800",
+       "level": "Level_NONE",
+       "point": {
+        "lat": -19.857928,
+        "lon": -43.961285,
+        "source": "GOOGLE"
+       },
+       "geoJson": "",
+       "precision": "ROOFTOP",
+       "name": "",
+       "locationId": "BR>Minas Gerais>NULL>Belo Horizonte>Barrios>Sao Jose",
+       "source": "CORREIOS",
+       "confidence": "VALID_STREET",
+       "pois": [],
+       "valuableZones": [],
+       "poisList": [],
+       "ibgeCityId": "",
+       "stateAcronym": "MG",
+       "geopoint": "-19.857928,-43.961285"
+      },
+      "propertyType": "UNIT",
+      "usableAreas": [
+       46
+      ],
+      "totalAreas": [
+       46
+      ],
+      "bedrooms": [
+       1
+      ],
+      "bathrooms": [
+       2
+      ],
+      "suites": [],
+      "parkingSpaces": [],
+      "floors": [],
+      "unitTypes": [
+       "APARTMENT"
+      ],
+      "unitSubTypes": [],
+      "amenities": [],
+      "usageTypes": [
+       "RESIDENTIAL"
+      ],
+      "unitFloor": 0,
+      "unitsOnTheFloor": 0,
+      "constructionStatus": "ConstructionStatus_NONE",
+      "createdAt": "2026-09-01T07:44:18.165+00:00",
+      "stamps": [],
+      "condominiumName": "",
+      "modality": [],
+      "flags": [
+       {
+        "value": "BR>Minas Gerais>NULL>Belo Horizonte>Barrios>Sao Jose",
+        "key": "OLD_LOCATION_ID"
+       },
+       {
+        "value": "true",
+        "key": "NEW_LISTING_FLOW"
+       }
+      ],
+      "visitToTheDecoratedCalendar": [],
+      "constructionStatusCalendar": [],
+      "propertyDevelopers": [],
+      "advertiserContact": {
+       "phones": [
+        "03134921000",
+        "031993980398"
+       ]
+      },
+      "whatsappNumber": "031993980398"
+     },
+     "account": {
+      "id": "45b27a99-f1f5-fdff-a6da-ed4b53093712",
+      "name": "Fabiano Imóveis",
+      "phones": {
+       "primary": "03134921000",
+       "mobile": "031993980398"
+      },
+      "addresses": {
+       "shipping": {},
+       "billing": {
+        "street": "Avenida Antônio Abrahaão Caram",
+        "streetNumber": "762",
+        "complement": "",
+        "neighborhood": "São José",
+        "city": "Belo Horizonte",
+        "state": "MG",
+        "locationId": ""
+       }
+      },
+      "logoUrl": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/3ef29177412da2d04d3ce1428d4756cb/{description}.jpg?action={action}&dimension={width}x{height}",
+      "licenseNumber": "25990-F-MG",
+      "websiteUrl": "https://www.fabianoimoveis.com.br  https://www.instagram.com/fabianoimoveispampulha  https://m.facebook.com/story.php  https://br.linkedin.com/in/fabiano-im%C3%B3veis-73a420204",
+      "createdDate": "2018-03-27T17:34:20Z",
+      "showAddress": true,
+      "legacyVivarealId": 39949,
+      "legacyZapId": 2214471,
+      "config": {
+       "verified": true
+      },
+      "tier": "diamond"
+     },
+     "medias": [
+      {
+       "id": "204a6ea88706a637cbd9ed5f52b9521e",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/204a6ea88706a637cbd9ed5f52b9521e/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "38d1bea1d73439aa056c27f6ea54befe",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/38d1bea1d73439aa056c27f6ea54befe/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "875f3436d37ecfad6373c4f0356e84d3",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/875f3436d37ecfad6373c4f0356e84d3/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "529a3faaef2dc4af359dfcc871a7f0bc",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/529a3faaef2dc4af359dfcc871a7f0bc/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "e4944b80da90ae2880414a5fe7413360",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/e4944b80da90ae2880414a5fe7413360/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "dae7782925b95a38645b790535860a06",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/dae7782925b95a38645b790535860a06/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "dfbd824e0a697cfe3f31bd5c451c272d",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/dfbd824e0a697cfe3f31bd5c451c272d/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "c2b23d209102617314619c53d3e627e1",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/c2b23d209102617314619c53d3e627e1/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "6a143bdce353a6cd903acd5c0951e2f7",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/6a143bdce353a6cd903acd5c0951e2f7/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "6435b682911ceea89debcd8d4729c3f2",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/6435b682911ceea89debcd8d4729c3f2/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "aab533cba3a764487d8462ee1b2e4e74",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/aab533cba3a764487d8462ee1b2e4e74/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "bbd3947a928c31c11b84e869a46780bf",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/bbd3947a928c31c11b84e869a46780bf/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      }
+     ],
+     "accountLink": {
+      "name": "Fabiano Imóveis",
+      "href": "/imobiliaria/39949/",
+      "rel": "",
+      "data": {},
+      "title": "",
+      "url": ""
+     },
+     "link": {
+      "name": "Apartamento com 1 Quarto para alugar, 46m²",
+      "href": "/imovel/aluguel-apartamento-1-quarto-sao-jose-belo-horizonte-mg-46m2-id-2909162865/",
+      "rel": "",
+      "data": {
+       "city": "Belo Horizonte",
+       "neighborhood": "São José",
+       "state": "Minas Gerais",
+       "street": "Alameda das Lathânias",
+       "streetNumber": "1140",
+       "zone": "Bairros"
+      },
+      "title": "",
+      "url": ""
+     }
+    },
+    {
+     "listing": {
+      "id": "2914113457",
+      "externalId": "PIR2470",
+      "advertiserId": "c226363b-9c84-3b37-2802-d487683ce4cf",
+      "contractType": "REAL_ESTATE",
+      "status": "ACTIVE",
+      "publicationType": "STANDARD",
+      "displayAddressType": "STREET",
+      "listingType": "USED",
+      "pricingInfos": [
+       {
+        "businessType": "RENTAL",
+        "yearlyIptu": 0,
+        "price": 1700,
+        "monthlyCondoFee": 186,
+        "rentalInfo": {
+         "period": "MONTHLY",
+         "warranties": [],
+         "monthlyRentalTotalPrice": 1886
+        }
+       }
+      ],
+      "showPrice": true,
+      "sourceId": "fb1a307d-5b91-3681-9169-79d351f474fe",
+      "address": {
+       "country": "BR",
+       "state": "Minas Gerais",
+       "city": "Belo Horizonte",
+       "district": "",
+       "zone": "",
+       "neighborhood": "São Luiz",
+       "street": "Rua Jornalista Wilson Ângelo",
+       "zipCode": "31310220",
+       "level": "Level_NONE",
+       "point": {
+        "source": "GOOGLE",
+        "approximateLat": -19.871,
+        "approximateLon": -43.978,
+        "radius": 140
+       },
+       "geoJson": "",
+       "precision": "ROOFTOP",
+       "name": "",
+       "locationId": "BR>Minas Gerais>NULL>Belo Horizonte>Barrios>Ouro Preto",
+       "source": "CORREIOS",
+       "confidence": "VALID_STREET",
+       "pois": [],
+       "valuableZones": [],
+       "poisList": [],
+       "ibgeCityId": "",
+       "stateAcronym": "MG",
+       "geopoint": "-19.871,-43.978"
+      },
+      "propertyType": "UNIT",
+      "usableAreas": [
+       22
+      ],
+      "totalAreas": [
+       22
+      ],
+      "bedrooms": [
+       1
+      ],
+      "bathrooms": [
+       1
+      ],
+      "suites": [],
+      "parkingSpaces": [],
+      "floors": [
+       2
+      ],
+      "unitTypes": [
+       "APARTMENT"
+      ],
+      "unitSubTypes": [
+       "KITNET"
+      ],
+      "amenities": [
+       "NUMBER_OF_FLOORS",
+       "INTERCOM",
+       "SAFETY_CIRCUIT"
+      ],
+      "usageTypes": [
+       "RESIDENTIAL"
+      ],
+      "unitFloor": 0,
+      "unitsOnTheFloor": 0,
+      "constructionStatus": "ConstructionStatus_NONE",
+      "createdAt": "2026-09-24T21:59:49.035+00:00",
+      "stamps": [],
+      "condominiumName": "",
+      "modality": [],
+      "flags": [
+       {
+        "value": "true",
+        "key": "NEW_LISTING_FLOW"
+       },
+       {
+        "value": "BR>Minas Gerais>NULL>Belo Horizonte>Barrios>Ouro Preto",
+        "key": "OLD_LOCATION_ID"
+       }
+      ],
+      "visitToTheDecoratedCalendar": [],
+      "constructionStatusCalendar": [],
+      "propertyDevelopers": [],
+      "advertiserContact": {
+       "phones": [
+        "3134982046"
+       ]
+      },
+      "whatsappNumber": ""
+     },
+     "account": {
+      "id": "c226363b-9c84-3b37-2802-d487683ce4cf",
+      "name": "Piramide Imóveis",
+      "phones": {
+       "primary": "3134982046",
+       "mobile": "3134982046"
+      },
+      "addresses": {
+       "shipping": {},
+       "billing": {
+        "street": "Rua Apucarana",
+        "streetNumber": "209",
+        "complement": "",
+        "neighborhood": "Ouro Preto",
+        "city": "Belo Horizonte",
+        "state": "MG",
+        "locationId": ""
+       }
+      },
+      "logoUrl": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/cf12f676405ec9cb9b4ad68eb07abb64/{description}.jpg?action={action}&dimension={width}x{height}",
+      "licenseNumber": "03589-J-MG",
+      "websiteUrl": "",
+      "createdDate": "2018-03-30T07:10:14Z",
+      "showAddress": true,
+      "legacyVivarealId": 230157,
+      "legacyZapId": 2439575,
+      "config": {
+       "isChatEnabled": true,
+       "verified": true
+      },
+      "tier": "diamond"
+     },
+     "medias": [
+      {
+       "id": "673159cce3be2bbe17f0b869f81ffe45",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/673159cce3be2bbe17f0b869f81ffe45/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "d0d41ca00b093d1c525d39d8bc6fbea3",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/d0d41ca00b093d1c525d39d8bc6fbea3/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "6b689b8dc473aadb97e3f9b3e1af9fc9",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/6b689b8dc473aadb97e3f9b3e1af9fc9/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "87a88b15025049a72dc52d14a8626b25",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/87a88b15025049a72dc52d14a8626b25/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "bf41d920f6729d29b31d485286144f81",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/bf41d920f6729d29b31d485286144f81/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "7ea4d46c0d4a789ff30d6cc38fcb418e",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/7ea4d46c0d4a789ff30d6cc38fcb418e/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      }
+     ],
+     "accountLink": {
+      "name": "Piramide Imóveis",
+      "href": "/imobiliaria/230157/",
+      "rel": "",
+      "data": {},
+      "title": "",
+      "url": ""
+     },
+     "link": {
+      "name": "Kitnet com 1 Quarto para alugar, 22m²",
+      "href": "/imovel/aluguel-quitinete-1-quarto-ouro-preto-belo-horizonte-mg-22m2-id-2914113457/",
+      "rel": "",
+      "data": {
+       "city": "Belo Horizonte",
+       "neighborhood": "Ouro Preto",
+       "state": "Minas Gerais",
+       "street": "Rua Jornalista Wilson Ângelo",
+       "streetNumber": "",
+       "zone": "Bairros"
+      },
+      "title": "",
+      "url": ""
+     }
+    },
+    {
+     "listing": {
+      "id": "2855791013",
+      "externalId": "662",
+      "advertiserId": "860187e3-24a7-c848-e2db-7ab6a5da2c08",
+      "contractType": "REAL_ESTATE",
+      "status": "ACTIVE",
+      "publicationType": "STANDARD",
+      "displayAddressType": "STREET",
+      "listingType": "USED",
+      "pricingInfos": [
+       {
+        "businessType": "RENTAL",
+        "yearlyIptu": 16738,
+        "price": 30000,
+        "monthlyCondoFee": 0,
+        "rentalInfo": {
+         "period": "MONTHLY",
+         "warranties": [
+          "GUARANTOR",
+          "INSURANCE_GUARANTEE",
+          "CAPITALIZATION_BONDS"
+         ],
+         "monthlyRentalTotalPrice": 30000
+        }
+       }
+      ],
+      "showPrice": true,
+      "sourceId": "3cef4b8c-b7bb-3821-9db8-72ad26e62ea8",
+      "address": {
+       "country": "BR",
+       "state": "Minas Gerais",
+       "city": "Belo Horizonte",
+       "district": "",
+       "zone": "",
+       "neighborhood": "São Luiz",
+       "street": "Avenida Otacílio Negrão de Lima",
+       "zipCode": "31310022",
+       "level": "Level_NONE",
+       "point": {
+        "source": "GOOGLE",
+        "approximateLat": -19.859,
+        "approximateLon": -43.975,
+        "radius": 140
+       },
+       "geoJson": "",
+       "precision": "ROOFTOP",
+       "name": "",
+       "locationId": "BR>Minas Gerais>NULL>Belo Horizonte>Barrios>Sao Luiz",
+       "source": "CORREIOS",
+       "confidence": "VALID_STREET",
+       "pois": [],
+       "valuableZones": [],
+       "poisList": [],
+       "ibgeCityId": "",
+       "stateAcronym": "MG",
+       "geopoint": "-19.859,-43.975"
+      },
+      "propertyType": "UNIT",
+      "usableAreas": [
+       560
+      ],
+      "totalAreas": [
+       560
+      ],
+      "bedrooms": [
+       1
+      ],
+      "bathrooms": [
+       3
+      ],
+      "suites": [
+       0
+      ],
+      "parkingSpaces": [
+       0
+      ],
+      "floors": [
+       0
+      ],
+      "unitTypes": [
+       "COMMERCIAL_BUILDING"
+      ],
+      "unitSubTypes": [],
+      "amenities": [
+       "INTERCOM",
+       "GARDEN",
+       "PARTY_HALL",
+       "KITCHEN",
+       "BALCONY",
+       "SERVICE_AREA",
+       "HEATING"
+      ],
+      "usageTypes": [
+       "RESIDENTIAL"
+      ],
+      "unitFloor": 0,
+      "unitsOnTheFloor": 0,
+      "constructionStatus": "ConstructionStatus_NONE",
+      "createdAt": "2025-12-03T00:50:15.508+00:00",
+      "stamps": [],
+      "condominiumName": "",
+      "modality": [],
+      "flags": [
+       {
+        "value": "false",
+        "key": "NEW_INSERT_MODEL"
+       },
+       {
+        "value": "BR>Minas Gerais>NULL>Belo Horizonte>Barrios>Sao Luiz",
+        "key": "OLD_LOCATION_ID"
+       },
+       {
+        "value": "true",
+        "key": "NEW_LISTING_FLOW"
+       }
+      ],
+      "visitToTheDecoratedCalendar": [],
+      "constructionStatusCalendar": [],
+      "propertyDevelopers": [],
+      "h2Tag": "Prédio/Edificio inteiro para alugar com 1 quarto, 3 banheiros e área de 560 m² em",
+      "advertiserContact": {
+       "phones": [
+        "3133271347",
+        "31984822972"
+       ]
+      },
+      "whatsappNumber": "31984822972"
+     },
+     "account": {
+      "id": "860187e3-24a7-c848-e2db-7ab6a5da2c08",
+      "name": "São Luiz Imóveis",
+      "phones": {
+       "primary": "3133271347",
+       "mobile": "31984822972"
+      },
+      "logoUrl": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/94db5de2d6d0f28380d4711ed3b36346/{description}.jpg?action={action}&dimension={width}x{height}",
+      "licenseNumber": "6726-J-MG",
+      "websiteUrl": "",
+      "createdDate": "2020-07-09T13:10:57Z",
+      "showAddress": false,
+      "legacyVivarealId": 618506,
+      "legacyZapId": 3657207,
+      "config": {
+       "verified": true
+      },
+      "tier": "diamond"
+     },
+     "medias": [
+      {
+       "id": "8bc1d8039fddfe7fc613f00b01b2da93",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/8bc1d8039fddfe7fc613f00b01b2da93/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "141d7b3937837c86520c2fe873e6fba0",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/141d7b3937837c86520c2fe873e6fba0/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "55671f286d0ca7d82dcdaeec937c3f70",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/55671f286d0ca7d82dcdaeec937c3f70/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "8c0484e92e0921a95861b99c8acb7a26",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/8c0484e92e0921a95861b99c8acb7a26/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "f579e00292a2c17f1911d6b2100843b8",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/f579e00292a2c17f1911d6b2100843b8/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "f0b17bb828ca9413c17ddb0d5fabaadb",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/f0b17bb828ca9413c17ddb0d5fabaadb/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "ebcaed337515f2a91ab1b76af4427d56",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/ebcaed337515f2a91ab1b76af4427d56/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "52608871d49a00d88e989a3b53af468f",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/52608871d49a00d88e989a3b53af468f/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "1a704433a01f2c34152886b67b3aaf3c",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/1a704433a01f2c34152886b67b3aaf3c/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "8884c0b22e21097e0cdb0a2c60e9f9d1",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/8884c0b22e21097e0cdb0a2c60e9f9d1/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "ccb524f38a6821d5c20dfc0064d1e1fe",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/ccb524f38a6821d5c20dfc0064d1e1fe/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "bd694ad89bf98a767d392cc93aad33ec",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/bd694ad89bf98a767d392cc93aad33ec/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "022fb74bf20872fb7fea8954cd9c4d50",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/022fb74bf20872fb7fea8954cd9c4d50/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "c4bc16a16e883812583201ad6c0fc183",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/c4bc16a16e883812583201ad6c0fc183/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "bd30d5f00d9d3d4fefd770d4d3118b1d",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/bd30d5f00d9d3d4fefd770d4d3118b1d/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "39698d83ef2cde6fa369199f0757f30e",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/39698d83ef2cde6fa369199f0757f30e/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "11837c3f767235e07d62f9fb53974b55",
+       "url": "https://youtu.be/a1fQGtoNsYU",
+       "type": "VIDEO"
+      }
+     ],
+     "accountLink": {
+      "name": "São Luiz Imóveis",
+      "href": "/imobiliaria/618506/",
+      "rel": "",
+      "data": {},
+      "title": "",
+      "url": ""
+     },
+     "link": {
+      "name": "com 1 Quarto para alugar, 560m²",
+      "href": "/imovel/aluguel-1-quarto-com-interfone-sao-luiz-belo-horizonte-mg-560m2-id-2855791013/",
+      "rel": "",
+      "data": {
+       "city": "Belo Horizonte",
+       "neighborhood": "São Luiz",
+       "state": "Minas Gerais",
+       "street": "Avenida Otacílio Negrão de Lima",
+       "streetNumber": "",
+       "zone": "Bairros"
+      },
+      "title": "",
+      "url": ""
+     }
+    },
+    {
+     "listing": {
+      "id": "2827087759",
+      "externalId": "3655",
+      "advertiserId": "1483ecda-a4d4-020f-69fc-ecf865976d40",
+      "contractType": "REAL_ESTATE",
+      "status": "ACTIVE",
+      "publicationType": "STANDARD",
+      "displayAddressType": "ALL",
+      "listingType": "USED",
+      "pricingInfos": [
+       {
+        "businessType": "RENTAL",
+        "yearlyIptu": 640,
+        "price": 6000,
+        "monthlyCondoFee": 0,
+        "rentalInfo": {
+         "period": "MONTHLY",
+         "warranties": [
+          "SECURITY_DEPOSIT",
+          "INSURANCE_GUARANTEE",
+          "CAPITALIZATION_BONDS"
+         ],
+         "monthlyRentalTotalPrice": 6000
+        }
+       }
+      ],
+      "showPrice": true,
+      "sourceId": "bf2c307a-544a-312f-8853-ca70bfdd1077",
+      "address": {
+       "country": "BR",
+       "state": "Minas Gerais",
+       "city": "Belo Horizonte",
+       "district": "",
+       "zone": "",
+       "neighborhood": "São Luiz",
+       "street": "Alameda do Ipê Amarelo",
+       "streetNumber": "80",
+       "zipCode": "31275090",
+       "level": "Level_NONE",
+       "point": {
+        "lat": -19.85376,
+        "lon": -43.963462,
+        "source": "GOOGLE"
+       },
+       "geoJson": "",
+       "precision": "ROOFTOP",
+       "name": "",
+       "locationId": "BR>Minas Gerais>NULL>Belo Horizonte>Barrios>Sao Luiz",
+       "source": "CORREIOS",
+       "confidence": "VALID_STREET",
+       "pois": [],
+       "valuableZones": [],
+       "poisList": [],
+       "ibgeCityId": "",
+       "stateAcronym": "MG",
+       "geopoint": "-19.85376,-43.963462"
+      },
+      "propertyType": "UNIT",
+      "usableAreas": [
+       300
+      ],
+      "totalAreas": [
+       300
+      ],
+      "bedrooms": [
+       1
+      ],
+      "bathrooms": [
+       1
+      ],
+      "suites": [
+       0
+      ],
+      "parkingSpaces": [
+       0
+      ],
+      "floors": [
+       0
+      ],
+      "unitTypes": [
+       "OFFICE"
+      ],
+      "unitSubTypes": [],
+      "amenities": [
+       "HOME_OFFICE",
+       "SERVICE_AREA"
+      ],
+      "usageTypes": [
+       "COMMERCIAL"
+      ],
+      "unitFloor": 0,
+      "unitsOnTheFloor": 0,
+      "constructionStatus": "ConstructionStatus_NONE",
+      "createdAt": "2025-08-07T11:55:25.746+00:00",
+      "stamps": [],
+      "condominiumName": "",
+      "modality": [],
+      "flags": [
+       {
+        "value": "false",
+        "key": "NEW_INSERT_MODEL"
+       },
+       {
+        "value": "BR>Minas Gerais>NULL>Belo Horizonte>Barrios>Sao Luiz",
+        "key": "OLD_LOCATION_ID"
+       },
+       {
+        "value": "true",
+        "key": "NEW_LISTING_FLOW"
+       }
+      ],
+      "visitToTheDecoratedCalendar": [],
+      "constructionStatusCalendar": [],
+      "propertyDevelopers": [],
+      "h2Tag": "Sala/Conjunto/Escritório para alugar com 1 quarto, 1 banheiro, HOME OFFICE e 300 m² em",
+      "advertiserContact": {
+       "phones": [
+        "3132255911",
+        "31985266115"
+       ]
+      },
+      "whatsappNumber": "31985266115"
+     },
+     "account": {
+      "id": "1483ecda-a4d4-020f-69fc-ecf865976d40",
+      "name": "Araujo Imoveis",
+      "phones": {
+       "primary": "3132255911",
+       "mobile": "31985266115"
+      },
+      "addresses": {
+       "shipping": {},
+       "billing": {
+        "street": "Avenida do Contorno",
+        "streetNumber": "6000 / 304 e 305",
+        "complement": "",
+        "neighborhood": "FUNCIONARIOS",
+        "city": "Belo Horizonte",
+        "state": "MG",
+        "locationId": ""
+       }
+      },
+      "logoUrl": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/ddea743f4223d0dc2c985c5dc550dbf0/{description}.jpg?action={action}&dimension={width}x{height}",
+      "licenseNumber": "00812-J-MG",
+      "websiteUrl": "http://www.araujoimoveis.com.br",
+      "createdDate": "2018-03-27T16:04:19Z",
+      "showAddress": true,
+      "legacyVivarealId": 86113,
+      "legacyZapId": 2629186,
+      "config": {
+       "verified": true
+      },
+      "tier": "diamond"
+     },
+     "medias": [
+      {
+       "id": "1292271ed3594d1d502a6e00fcf0935f",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/1292271ed3594d1d502a6e00fcf0935f/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "84a3cc8ef8c3716f7e1e9f72cb4ceeed",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/84a3cc8ef8c3716f7e1e9f72cb4ceeed/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "dcf912a9ca6ca5d9331c4dac7c974f46",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/dcf912a9ca6ca5d9331c4dac7c974f46/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "3bd2b2ff4a8cb609ac9cba0881c228e1",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/3bd2b2ff4a8cb609ac9cba0881c228e1/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "5ef44738b77db71251ca66c1e5c83dcf",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/5ef44738b77db71251ca66c1e5c83dcf/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "98e120ef5322100578c6361d38122eb6",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/98e120ef5322100578c6361d38122eb6/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "4de04a8ecea7f6b01cef6aef0d4fad26",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/4de04a8ecea7f6b01cef6aef0d4fad26/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "8ce2d72b54abfe78a2fa4dca9d8c6f3a",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/8ce2d72b54abfe78a2fa4dca9d8c6f3a/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "6b765c2e79e1536993e713ca384dd781",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/6b765c2e79e1536993e713ca384dd781/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "e678468c31bc12e0a9f68df9831f9e26",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/e678468c31bc12e0a9f68df9831f9e26/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "beeda3c642a8b6ee5926ed9a8e5ff7a6",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/beeda3c642a8b6ee5926ed9a8e5ff7a6/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "546eb8aa5dc486819fb9b7082631aeb5",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/546eb8aa5dc486819fb9b7082631aeb5/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "527bf2ff1ad9791d128c015d50e4f232",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/527bf2ff1ad9791d128c015d50e4f232/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "a154e2d4c331139d25c598117a27b3a8",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/a154e2d4c331139d25c598117a27b3a8/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "b44fc3643020d0a994b6967752531947",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/b44fc3643020d0a994b6967752531947/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "7c0539e2087506d191dddda1d8c063c1",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/7c0539e2087506d191dddda1d8c063c1/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "a3cc4cf57426e792f48f10dd3e86ae9e",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/a3cc4cf57426e792f48f10dd3e86ae9e/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "65ee78549ab4433534cf2b571493a6c3",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/65ee78549ab4433534cf2b571493a6c3/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "29b018a48694cd411d37d43388b4e9ae",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/29b018a48694cd411d37d43388b4e9ae/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "1bc8ac6f907030da84a2661624cf1a39",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/1bc8ac6f907030da84a2661624cf1a39/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "56a5ee86c477c75eb6777da47b7cc8a4",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/56a5ee86c477c75eb6777da47b7cc8a4/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "138045de56061b6a806e051de7e2e638",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/138045de56061b6a806e051de7e2e638/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "a1a85150ed7197f7c65c1f47a74429d0",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/a1a85150ed7197f7c65c1f47a74429d0/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      },
+      {
+       "id": "882d68b09ce639f2568ba06399ac861f",
+       "url": "https://resizedimgs.zapimoveis.com.br/img/vr-listing/882d68b09ce639f2568ba06399ac861f/{description}.jpg?action={action}&dimension={width}x{height}",
+       "type": "IMAGE"
+      }
+     ],
+     "accountLink": {
+      "name": "Araujo Imoveis",
+      "href": "/imobiliaria/86113/",
+      "rel": "",
+      "data": {},
+      "title": "",
+      "url": ""
+     },
+     "link": {
+      "name": "Conjunto Comercial / Sala com 1 Quarto para alugar, 300m²",
+      "href": "/imovel/aluguel-conjunto-comercial-sala-1-quarto-com-escritorio-sao-luiz-belo-horizonte-mg-300m2-id-2827087759/",
+      "rel": "",
+      "data": {
+       "city": "Belo Horizonte",
+       "neighborhood": "São Luiz",
+       "state": "Minas Gerais",
+       "street": "Alameda do Ipê Amarelo",
+       "streetNumber": "80",
+       "zone": "Bairros"
+      },
+      "title": "",
+      "url": ""
+     }
+    }
+   ],
+   "facets": {
+    "amenities": {
+     "INTERCOM": 3,
+     "GARDEN": 2,
+     "KITCHEN": 2,
+     "SAFETY_CIRCUIT": 2,
+     "SERVICE_AREA": 2,
+     "AIR_CONDITIONING": 1,
+     "BALCONY": 1,
+     "BARBECUE_GRILL": 1,
+     "GATED_COMMUNITY": 1,
+     "GOURMET_SPACE": 1,
+     "HEATING": 1,
+     "HOME_OFFICE": 1,
+     "NUMBER_OF_FLOORS": 1,
+     "PARTY_HALL": 1
+    }
+   }
+  }
+ }
+}
