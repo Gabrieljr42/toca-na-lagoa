@@ -20,7 +20,7 @@ num painel só e me avisa no Telegram quando aparece algo novo ou quando um favo
   configuráveis) e o custo mensal com condomínio e IPTU, que também serve de filtro e de ordenação.
   A estimativa não inclui seguros nem taxas do banco.
 - **Junta anúncios repetidos**: o mesmo apartamento anunciado em mais de um site vira um card só,
-  com links para as outras cópias.
+  com links para as outras cópias (no máximo uma cópia por site).
 - **Histórico de preço** de cada anúncio.
 - **Alertas no Telegram**:
   - apartamentos **novos** que batem com a busca;
