@@ -2,10 +2,11 @@
 
 from dataclasses import dataclass
 
+from app.config import RENT
 from app.normalize import normalize_text
 
 MAX_AREA_DIFFERENCE_M2 = 3
-MAX_RENT_DIFFERENCE_RATIO = 0.05
+MAX_PRICE_DIFFERENCE_RATIO = 0.05
 
 
 @dataclass(frozen=True)
@@ -16,15 +17,18 @@ class GroupCandidate:
     source: str
     neighborhood: str
     area: int | None
-    rent: int
+    price: int
+    business: str = RENT
 
 
 def assign_groups(candidates: list[GroupCandidate]) -> dict[int, int | None]:
     """Group listings that look like the same apartment on different sources.
 
-    Two listings match when they come from different sources, are in the same
-    neighborhood, have known areas within 3 m² and rents within 5%. Matches are
-    transitive.
+    Two listings match when they come from different sources, are offered the
+    same way (to rent or to buy), are in the same neighborhood, have known areas
+    within 3 m² and prices within 5%. The closest matches are joined first, and
+    a group never holds two listings from the same portal: otherwise similar
+    units of one building or street chain into a single huge group.
 
     Args:
         candidates: Active listings to compare.
@@ -34,10 +38,13 @@ def assign_groups(candidates: list[GroupCandidate]) -> dict[int, int | None]:
         or None for listings that matched nothing.
     """
     parent = {candidate.listing_id: candidate.listing_id for candidate in candidates}
-    for index, first in enumerate(candidates):
-        for second in candidates[index + 1 :]:
-            if are_same_apartment(first, second):
-                _union(parent, first.listing_id, second.listing_id)
+    group_sources = {candidate.listing_id: {candidate.source} for candidate in candidates}
+    for first, second in _matching_pairs(candidates):
+        first_root, second_root = _find(parent, first.listing_id), _find(parent, second.listing_id)
+        if first_root == second_root or group_sources[first_root] & group_sources[second_root]:
+            continue
+        _union(parent, first_root, second_root)
+        group_sources[_find(parent, first_root)] = group_sources[first_root] | group_sources[second_root]
 
     roots = {listing_id: _find(parent, listing_id) for listing_id in parent}
     group_sizes: dict[int, int] = {}
@@ -46,16 +53,35 @@ def assign_groups(candidates: list[GroupCandidate]) -> dict[int, int | None]:
     return {listing_id: root if group_sizes[root] > 1 else None for listing_id, root in roots.items()}
 
 
+def _matching_pairs(candidates: list[GroupCandidate]) -> list[tuple[GroupCandidate, GroupCandidate]]:
+    """Every pair that looks like the same apartment, closest prices and areas first."""
+    pairs = [
+        (first, second)
+        for index, first in enumerate(candidates)
+        for second in candidates[index + 1 :]
+        if are_same_apartment(first, second)
+    ]
+    return sorted(pairs, key=lambda pair: _difference(*pair))
+
+
+def _difference(first: GroupCandidate, second: GroupCandidate) -> tuple[float, int]:
+    """How far apart two matching listings are: relative price difference, then area difference."""
+    price_difference = abs(first.price - second.price) / max(first.price, second.price)
+    return price_difference, abs((first.area or 0) - (second.area or 0))
+
+
 def are_same_apartment(first: GroupCandidate, second: GroupCandidate) -> bool:
     """Whether two listings from different sources describe the same apartment."""
-    if first.source == second.source or first.area is None or second.area is None:
+    if first.source == second.source or first.business != second.business:
+        return False
+    if first.area is None or second.area is None:
         return False
     if normalize_text(first.neighborhood) != normalize_text(second.neighborhood):
         return False
     if abs(first.area - second.area) > MAX_AREA_DIFFERENCE_M2:
         return False
-    higher_rent = max(first.rent, second.rent)
-    return higher_rent > 0 and abs(first.rent - second.rent) / higher_rent <= MAX_RENT_DIFFERENCE_RATIO
+    higher_price = max(first.price, second.price)
+    return higher_price > 0 and abs(first.price - second.price) / higher_price <= MAX_PRICE_DIFFERENCE_RATIO
 
 
 def _find(parent: dict[int, int], listing_id: int) -> int:

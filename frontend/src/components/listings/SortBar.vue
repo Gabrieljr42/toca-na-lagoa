@@ -1,11 +1,12 @@
-<!-- Sort options (scrollable on small screens) and the ascending/descending switch. -->
+<!-- Sort options of the page's business (scrollable on small screens) and the ascending/descending switch. -->
 <script setup>
 import AppIcon from '../ui/AppIcon.vue';
-import { useOptions } from '../../core/injection.js';
 import { defaultOrder } from '../../config/listingFilters.js';
 
+defineProps({
+  labels: { type: Object, required: true },
+});
 const filters = defineModel({ type: Object, required: true });
-const { options } = useOptions();
 
 const setSort = (sort) => { filters.value = { ...filters.value, sort, order: defaultOrder(sort) }; };
 const flipOrder = () => { filters.value = { ...filters.value, order: filters.value.order === 'asc' ? 'desc' : 'asc' }; };
@@ -20,7 +21,7 @@ const flipOrder = () => { filters.value = { ...filters.value, order: filters.val
       aria-label="Ordenar por"
     >
       <button
-        v-for="(label, key) in options.sort_labels"
+        v-for="(label, key) in labels"
         :key="key"
         type="button"
         role="radio"

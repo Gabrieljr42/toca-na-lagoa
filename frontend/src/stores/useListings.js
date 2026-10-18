@@ -1,6 +1,7 @@
 /**
  * State of the listings page: loading cards for a set of filters and toggling
- * favorite/hidden flags with optimistic updates.
+ * favorite/hidden flags with optimistic updates. Also keeps whether the
+ * page's business is being searched and, for sales, the financing terms.
  */
 
 import { ref } from 'vue';
@@ -8,18 +9,22 @@ import { ref } from 'vue';
 export function useListings(listingsService, toasts) {
   const cards = ref([]);
   const neighborhoods = ref([]);
+  const searchEnabled = ref(true);
+  const financing = ref(null);
   const loading = ref(false);
   const loaded = ref(false);
   let latestRequest = 0;
 
-  async function load(filters) {
+  async function load(business, filters) {
     const request = ++latestRequest;
     loading.value = true;
     try {
-      const page = await listingsService.list(filters);
+      const page = await listingsService.list(business, filters);
       if (request !== latestRequest) return;
       cards.value = page.cards;
       neighborhoods.value = page.neighborhoods;
+      searchEnabled.value = page.search_enabled;
+      financing.value = page.financing;
       loaded.value = true;
     } catch (error) {
       toasts.error(error.message);
@@ -42,5 +47,5 @@ export function useListings(listingsService, toasts) {
     }
   }
 
-  return { cards, neighborhoods, loading, loaded, load, toggleFlag };
+  return { cards, neighborhoods, searchEnabled, financing, loading, loaded, load, toggleFlag };
 }
