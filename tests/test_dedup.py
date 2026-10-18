@@ -3,13 +3,13 @@
 from app.dedup import GroupCandidate, assign_groups
 
 
-def candidate(listing_id: int, source: str, area: int | None = 40, rent: int = 1500, neighborhood: str = "Castelo"):
+def candidate(listing_id: int, source: str, area: int | None = 40, price: int = 1500, neighborhood: str = "Castelo"):
     """Build a candidate with sensible defaults."""
-    return GroupCandidate(listing_id=listing_id, source=source, neighborhood=neighborhood, area=area, rent=rent)
+    return GroupCandidate(listing_id=listing_id, source=source, neighborhood=neighborhood, area=area, price=price)
 
 
 def test_should_group_same_apartment_on_different_portals():
-    groups = assign_groups([candidate(1, "zap"), candidate(2, "netimoveis", area=42, rent=1550)])
+    groups = assign_groups([candidate(1, "zap"), candidate(2, "netimoveis", area=42, price=1550)])
     assert groups == {1: 1, 2: 1}
 
 
@@ -17,8 +17,8 @@ def test_should_not_group_listings_from_the_same_portal():
     assert assign_groups([candidate(1, "zap"), candidate(2, "zap")]) == {1: None, 2: None}
 
 
-def test_should_not_group_when_rent_differs_too_much():
-    assert assign_groups([candidate(1, "zap"), candidate(2, "vivareal", rent=1800)]) == {1: None, 2: None}
+def test_should_not_group_when_price_differs_too_much():
+    assert assign_groups([candidate(1, "zap"), candidate(2, "vivareal", price=1800)]) == {1: None, 2: None}
 
 
 def test_should_not_group_when_area_is_unknown():
@@ -28,3 +28,9 @@ def test_should_not_group_when_area_is_unknown():
 def test_should_group_transitively_under_smallest_id():
     groups = assign_groups([candidate(5, "zap"), candidate(3, "vivareal"), candidate(9, "netimoveis")])
     assert groups == {5: 3, 3: 3, 9: 3}
+
+
+def test_should_not_group_a_rental_with_a_sale():
+    rental = candidate(1, "zap")
+    sale = GroupCandidate(listing_id=2, source="vivareal", neighborhood="Castelo", area=40, price=1500, business="sale")
+    assert assign_groups([rental, sale]) == {1: None, 2: None}

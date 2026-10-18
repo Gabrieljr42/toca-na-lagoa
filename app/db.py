@@ -2,7 +2,7 @@
 
 from collections.abc import Iterator
 
-from sqlalchemy import Engine, inspect, text
+from sqlalchemy import Connection, Engine, MetaData, Table, UniqueConstraint, inspect, literal, text
 from sqlmodel import Session, SQLModel, create_engine
 
 from app.config import DATA_DIR, DATABASE_URL
@@ -16,6 +16,7 @@ def init_db() -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     SQLModel.metadata.create_all(engine)
     _add_missing_columns()
+    _rebuild_tables_with_changed_keys()
     with Session(engine) as session:
         if session.get(Settings, 1) is None:
             session.add(Settings(id=1))
@@ -25,7 +26,7 @@ def init_db() -> None:
 def _add_missing_columns() -> None:
     """Add model columns created after the database was (``create_all`` never alters tables).
 
-    Only nullable columns are supported, which is all the app has needed so far.
+    Existing rows get the column's scalar default from the model, or NULL when it has none.
     """
     with engine.begin() as connection:
         for table in SQLModel.metadata.sorted_tables:
@@ -33,7 +34,63 @@ def _add_missing_columns() -> None:
             for column in table.columns:
                 if column.name not in existing:
                     column_type = column.type.compile(dialect=connection.dialect)
-                    connection.execute(text(f'ALTER TABLE "{table.name}" ADD COLUMN "{column.name}" {column_type}'))
+                    default = _default_clause(connection, column.default)
+                    connection.execute(
+                        text(f'ALTER TABLE "{table.name}" ADD COLUMN "{column.name}" {column_type}{default}'),
+                    )
+
+
+def _default_clause(connection: Connection, default) -> str:
+    """SQL ``DEFAULT`` clause for a column default, empty when there is no scalar default."""
+    if default is None or not default.is_scalar or default.arg is None:
+        return ""
+    value = literal(default.arg).compile(dialect=connection.dialect, compile_kwargs={"literal_binds": True})
+    return f" DEFAULT {value}"
+
+
+def _rebuild_tables_with_changed_keys() -> None:
+    """Rebuild tables whose primary key or unique constraints changed in the model.
+
+    SQLite cannot alter constraints, so the table is recreated and its rows are
+    copied over, following the procedure in the SQLite docs. Runs after
+    ``_add_missing_columns``, so every model column already exists.
+    """
+    with engine.begin() as connection:
+        for table in SQLModel.metadata.sorted_tables:
+            if _stored_keys(connection, table.name) != _model_keys(table):
+                _rebuild_table(connection, table)
+
+
+def _stored_keys(connection: Connection, table_name: str) -> tuple:
+    """Primary key and unique constraints of a table as stored in the database."""
+    inspector = inspect(connection)
+    primary_key = tuple(sorted(inspector.get_pk_constraint(table_name)["constrained_columns"]))
+    uniques = sorted(tuple(sorted(unique["column_names"])) for unique in inspector.get_unique_constraints(table_name))
+    return primary_key, uniques
+
+
+def _model_keys(table: Table) -> tuple:
+    """Primary key and unique constraints of a table as declared in the models."""
+    primary_key = tuple(sorted(column.name for column in table.primary_key.columns))
+    uniques = sorted(
+        tuple(sorted(column.name for column in constraint.columns))
+        for constraint in table.constraints
+        if isinstance(constraint, UniqueConstraint)
+    )
+    return primary_key, uniques
+
+
+def _rebuild_table(connection: Connection, table: Table) -> None:
+    """Recreate a table from the model, keeping its rows and ids."""
+    staging = table.to_metadata(MetaData(), name=f"{table.name}_rebuild")
+    staging.indexes.clear()
+    staging.create(connection)
+    columns = ", ".join(f'"{column.name}"' for column in table.columns)
+    connection.execute(text(f'INSERT INTO "{staging.name}" ({columns}) SELECT {columns} FROM "{table.name}"'))
+    connection.execute(text(f'DROP TABLE "{table.name}"'))
+    connection.execute(text(f'ALTER TABLE "{staging.name}" RENAME TO "{table.name}"'))
+    for index in table.indexes:
+        index.create(connection)
 
 
 def get_session() -> Iterator[Session]:

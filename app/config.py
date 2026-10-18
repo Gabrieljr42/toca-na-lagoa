@@ -46,6 +46,10 @@ DEFAULT_NEIGHBORHOODS = [
     "Jardim Atlântico",
 ]
 
+RENT = "rent"
+SALE = "sale"
+BUSINESS_LABELS: dict[str, str] = {RENT: "Aluguel", SALE: "Compra"}
+
 SOURCE_LABELS: dict[str, str] = {
     "quintoandar": "QuintoAndar",
     "zap": "ZAP",

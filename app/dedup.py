@@ -2,10 +2,11 @@
 
 from dataclasses import dataclass
 
+from app.config import RENT
 from app.normalize import normalize_text
 
 MAX_AREA_DIFFERENCE_M2 = 3
-MAX_RENT_DIFFERENCE_RATIO = 0.05
+MAX_PRICE_DIFFERENCE_RATIO = 0.05
 
 
 @dataclass(frozen=True)
@@ -16,15 +17,16 @@ class GroupCandidate:
     source: str
     neighborhood: str
     area: int | None
-    rent: int
+    price: int
+    business: str = RENT
 
 
 def assign_groups(candidates: list[GroupCandidate]) -> dict[int, int | None]:
     """Group listings that look like the same apartment on different sources.
 
-    Two listings match when they come from different sources, are in the same
-    neighborhood, have known areas within 3 m² and rents within 5%. Matches are
-    transitive.
+    Two listings match when they come from different sources, are offered the
+    same way (to rent or to buy), are in the same neighborhood, have known areas
+    within 3 m² and prices within 5%. Matches are transitive.
 
     Args:
         candidates: Active listings to compare.
@@ -48,14 +50,16 @@ def assign_groups(candidates: list[GroupCandidate]) -> dict[int, int | None]:
 
 def are_same_apartment(first: GroupCandidate, second: GroupCandidate) -> bool:
     """Whether two listings from different sources describe the same apartment."""
-    if first.source == second.source or first.area is None or second.area is None:
+    if first.source == second.source or first.business != second.business:
+        return False
+    if first.area is None or second.area is None:
         return False
     if normalize_text(first.neighborhood) != normalize_text(second.neighborhood):
         return False
     if abs(first.area - second.area) > MAX_AREA_DIFFERENCE_M2:
         return False
-    higher_rent = max(first.rent, second.rent)
-    return higher_rent > 0 and abs(first.rent - second.rent) / higher_rent <= MAX_RENT_DIFFERENCE_RATIO
+    higher_price = max(first.price, second.price)
+    return higher_price > 0 and abs(first.price - second.price) / higher_price <= MAX_PRICE_DIFFERENCE_RATIO
 
 
 def _find(parent: dict[int, int], listing_id: int) -> int:

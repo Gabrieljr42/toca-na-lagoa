@@ -7,8 +7,9 @@ export class ListingsService {
     this.http = http;
   }
 
-  list(filters) {
-    return this.http.get('/api/listings', filtersToQuery(filters));
+  /** Listings of one business ('rent' or 'sale'); the business comes from the page, not the URL query. */
+  list(business, filters) {
+    return this.http.get('/api/listings', { business, ...filtersToQuery(filters) });
   }
 
   update(listingId, changes) {
